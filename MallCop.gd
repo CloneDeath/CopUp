@@ -2,7 +2,6 @@ extends Control
 
 export var cops = 0;
 export var arrest_cost = 5;
-export var enabled = true;
 export var arrests_per_second = 1;
 signal arrest(count);
 
@@ -14,8 +13,7 @@ func _process(delta):
 	$CopCount.text = str(cops);
 
 func make_arrest():
-	emit_signal("arrest", cops);
+	emit_signal("arrest", cops * arrests_per_second);
 
 func add_cop():
-	if (enabled):
-		cops += arrests_per_second;
+	cops += 1;

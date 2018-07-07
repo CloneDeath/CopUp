@@ -19,7 +19,6 @@ size_flags_vertical = 1
 script = ExtResource( 1 )
 cops = 0
 arrest_cost = 5
-enabled = true
 arrests_per_second = 1
 
 [node name="BuyCop" type="Button" parent="." index="0"]

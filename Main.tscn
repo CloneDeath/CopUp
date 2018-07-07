@@ -81,6 +81,7 @@ margin_left = 7.0
 margin_top = 89.0
 margin_right = 47.0
 margin_bottom = 129.0
+arrest_cost = 25
 arrests_per_second = 3
 
 [node name="BuyCop" parent="SecurityCamera" index="0"]

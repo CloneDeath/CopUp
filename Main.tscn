@@ -70,7 +70,31 @@ max_lines_visible = -1
 
 [node name="MallCop" parent="." index="2" instance=ExtResource( 3 )]
 
-margin_top = 26.0
-margin_bottom = 66.0
+margin_left = 8.0
+margin_top = 31.0
+margin_right = 48.0
+margin_bottom = 71.0
+
+[node name="SecurityCamera" parent="." index="3" instance=ExtResource( 3 )]
+
+margin_left = 7.0
+margin_top = 89.0
+margin_right = 47.0
+margin_bottom = 129.0
+arrests_per_second = 3
+
+[node name="BuyCop" parent="SecurityCamera" index="0"]
+
+text = "Buy Security Camera"
+
+[node name="TotalMallCops" parent="SecurityCamera" index="2"]
+
+text = "Total Security Cameras"
+
+[node name="CopCount" parent="SecurityCamera" index="3"]
+
+margin_left = 177.0
+margin_right = 217.0
 
 
+[editable path="SecurityCamera"]

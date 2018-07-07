@@ -3,6 +3,7 @@ extends Control
 export var cops = 0;
 export var arrest_cost = 5;
 export var enabled = true;
+export var arrests_per_second = 1;
 signal arrest(count);
 
 func _ready():
@@ -17,4 +18,4 @@ func make_arrest():
 
 func add_cop():
 	if (enabled):
-		cops += 1;
+		cops += arrests_per_second;

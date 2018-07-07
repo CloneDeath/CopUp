@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Arrest.tscn" type="PackedScene" id=2]
+[ext_resource path="res://MallCop.tscn" type="PackedScene" id=3]
 
 [node name="Main" type="Node" index="0"]
 
@@ -66,5 +67,10 @@ align = 1
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
+
+[node name="MallCop" parent="." index="2" instance=ExtResource( 3 )]
+
+margin_top = 26.0
+margin_bottom = 66.0
 
 

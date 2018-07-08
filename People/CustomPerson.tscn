@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://People/Person.tscn" type="PackedScene" id=1]
+[ext_resource path="res://People/CustomPerson.gd" type="Script" id=2]
+
+[node name="CustomPerson" index="0" instance=ExtResource( 1 )]
+
+script = ExtResource( 2 )
+shirt_type = 4
+shirt_color = 4
+skin_color = 5
+
+[node name="Chest" parent="." index="0"]
+
+animation = "pine4"
+
+

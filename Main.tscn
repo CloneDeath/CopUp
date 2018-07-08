@@ -3,7 +3,7 @@
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Arrest.tscn" type="PackedScene" id=2]
 [ext_resource path="res://MallCop.tscn" type="PackedScene" id=3]
-[ext_resource path="res://People/Person.tscn" type="PackedScene" id=4]
+[ext_resource path="res://People/CustomPerson.tscn" type="PackedScene" id=4]
 
 [node name="Main" type="Node" index="0"]
 
@@ -206,10 +206,10 @@ order = 12
 name_singular = "Galactic Patrolman"
 name_plural = "Galactic Patrolmen"
 
-[node name="Person" parent="." index="4" instance=ExtResource( 4 )]
+[node name="CustomPerson" parent="." index="4" instance=ExtResource( 4 )]
 
-position = Vector2( 350, 360 )
-scale = Vector2( 0.25, 0.25 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 496, 306 )
+scale = Vector2( 0.5, 0.5 )
+shirt_color = 2
 
 

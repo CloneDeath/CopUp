@@ -7,9 +7,10 @@ func _ready():
 		hook_up_child_arrest_signal(child);
 
 func hook_up_child_arrest_signal(child):
-	child.connect("arrest", self, "increment_score");
-	if ("money_provider" in child):
-		child.money_provider = self;
+	if (child.is_in_group("Force")):
+		child.connect("arrest", self, "increment_score");
+		if ("money_provider" in child):
+			child.money_provider = self;
 
 func _process(delta):
 	$GUI/ArrestCount.text = str(score);
